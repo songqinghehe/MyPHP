@@ -2,13 +2,15 @@
 
 vi /usr/local/nginx/conf/nginx.conf</br>
 修改前：</br>
-#location ~ \.php$ {</br>
-#    root           html;</br>
-#    fastcgi_pass   127.0.0.1:9000;</br>
-#    fastcgi_index  index.php;</br>
-#    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</br>
-#    include        fastcgi_params;</br>
-#}</br>
+location ~ \.php$ {</br>
+    root           html;</br>
+    fastcgi_pass   127.0.0.1:9000;</br>
+    fastcgi_index  index.php;</br>
+    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</br>
+    include        fastcgi_params;</br>
+}</br>
+
+ps :由于markdown的缘故，上面这段代码没有加某些注释符号</br>
 
 修改后：</br>
 location ~ \.php$ {</br>
