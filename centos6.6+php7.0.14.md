@@ -150,6 +150,8 @@ cd php-memcached-master</br>
 /usr/local/php/bin/phpize</br>
 ./configure --enable-memcached --with-php-config=/usr/local/php/bin/php-config --with-libmemcached-dir=/usr/local/libmemcached --disable-memcached-sasl</br>
 make && make install</br>
+查看是否安装成功</br>
+/usr/local/php/bin/php -m</br>
 
 >测试php-memcached扩展
 
@@ -207,6 +209,20 @@ vi /usr/local/php/etc/php.ini</br>
 wq!</br>
 查看是否安装成功</br>
 /usr/local/php/bin/php -m</br>
+
+>安装m9php-php7扩展
+
+tar -zxvf m9php-php7.tar.gz</br>
+cd m9php/m9php</br>
+/usr/local/php/bin/phpize</br>
+./configure --with-php-config=/usr/local/php/bin/php-config</br>
+make && make install</br>
+vi /usr/local/php/etc/php.ini</br>
+输入：extension=m9php.so</br>
+wq!</br>
+查看是否安装成功</br>
+/usr/local/php/bin/php -m</br>
+
 
 
 
