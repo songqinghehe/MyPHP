@@ -49,10 +49,10 @@ centos6.6 + VirtualBox + SecureCRT
 ####相管环境搭建
 >安装nginx
 
-tar zxf nginx-1.11.6.tar.gz
-cd nginx-1.11.6
-./configure --prefix=/usr/local/nginx --user=www --group=www --with-http_stub_status_module --with-http_flv_module --with-http_ssl_module
-make && make install
+tar zxf nginx-1.11.6.tar.gz</br>
+cd nginx-1.11.6</br>
+./configure --prefix=/usr/local/nginx --user=www --group=www --with-http_stub_status_module --with-http_flv_module --with-http_ssl_module</br>
+make && make install</br>
 
 >启动nginx
 
