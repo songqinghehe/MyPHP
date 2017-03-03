@@ -175,7 +175,7 @@ vi /tmp/memcached.php</br>
 	var_dump($m->get('string'));
 	var_dump($m->get('array'));
 	var_dump($m->get('object'));
-?>
+?></br>
 wq!</br>
 cd /tmp</br>
 执行：/usr/local/php/bin/php memcached.php 打印成功即可</br>
@@ -190,10 +190,24 @@ vi /tmp/mysql.php</br>
 	while($row = $rs -> fetch()){
 		print_r($row);
 	}
-?>
+?></br>
 wq!</br>
 cd /tmp</br>
 执行：/usr/local/php/bin/php mysql.php 打印成功即可
+
+>安装php-redis扩展
+
+tar xvf phpredis-develop.tar.gz</br>
+cd phpredis-develop</br>
+/usr/local/php/bin/phpize</br>
+./configure --with-php-config=/usr/local/php/bin/php-config</br>
+make && make install</br>
+vi /usr/local/php/etc/php.ini</br>
+输入：extension=redis.so</br>
+wq!</br>
+查看是否安装成功</br>
+/usr/local/php/bin/php -m</br>
+
 
 
 
