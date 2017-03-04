@@ -40,6 +40,14 @@ location / {</br>
 浏览器输入：http://192.168.31.69/laravel/public/</br>
 完毕！</br>
 
+>composer安装laravel
+
+cd /tmp</br>
+composer create-project laravel/laravel laravel5</br>
+php -S localhost:9999 -t laravel5</br>
+浏览器访问：http://localhost:9999</br>
+完毕！</br>
+
 >安装lumen-一键安装包
 
 cd /tmp</br>
