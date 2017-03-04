@@ -10,7 +10,7 @@ composer --version</br>
 >安装laravel--一键安装包方式
 
 前提需要有php的扩展:openssl/pdo/mbstring/Tokenizer</br>
-/tmp</br>
+cd /tmp</br>
 wget http://down.golaravel.com/laravel/laravel-v5.2.15.zip</br>
 unzip laravel-v5.2.15.zip</br>
 mv laravel-v5.2.15.zip laravel</br>
