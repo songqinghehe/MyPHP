@@ -41,7 +41,8 @@ location / {</br>
 完毕！</br>
 
 >安装lumen-一键安装包
-cd /tmp
+
+cd /tmp</br>
 wget http://down.golaravel.com/lumen/lumen-v5.2.1.zip</br>
 unzip lumen-v5.2.1.zip</br>
 mv lumen-v5.2.1.zip lumen</br>
