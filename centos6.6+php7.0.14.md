@@ -164,8 +164,8 @@ vi /usr/local/php/etc/php.ini</br>
 验证是否连接成功</br>
 vi /tmp/memcached.php</br>
 输入：</br>
+```php
 <?php
-
 	$m = new Memcached();
 	$m->addServer('127.0.0.1', 11211);
 	$m->set('int', 99);
@@ -177,7 +177,8 @@ vi /tmp/memcached.php</br>
 	var_dump($m->get('string'));
 	var_dump($m->get('array'));
 	var_dump($m->get('object'));
-?></br>
+?>
+```
 wq!</br>
 cd /tmp</br>
 执行：/usr/local/php/bin/php memcached.php 打印成功即可</br>
@@ -185,14 +186,15 @@ cd /tmp</br>
 >测试php-mysql扩展
 
 vi /tmp/mysql.php</br>
+```php
 <?php
-
 	$pdo = new PDO("mysql:host=hostname;dbname=databasename","root","");
 	$rs = $pdo -> query("select * from test");
 	while($row = $rs -> fetch()){
 		print_r($row);
 	}
-?></br>
+?>
+```
 wq!</br>
 cd /tmp</br>
 执行：/usr/local/php/bin/php mysql.php 打印成功即可
